@@ -1,0 +1,21 @@
+# name: build-application-container
+
+# run-name: Build application container for plugin development
+
+# on:
+#     push:
+#         branches:
+#             - main
+
+# jobs:
+#     build-run-docker-image:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: Checkout code
+#               uses: actions/checkout@v2
+
+#             - name: Build Docker image
+#               run: docker build -t myplugin .
+                
+#             - name: Run Docker container
+#               run: docker run -d -p 8080:80 myplugin      
